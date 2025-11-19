@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Heaven - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="cookie-loader">
+            <div class="cookie-circle"></div>
+            <div class="cookie-chips">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <p>Baking fresh cookies...</p>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <div class="cookie-logo">
+                        <div class="cookie-chips">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+                <span>Cookie Heaven</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="cart-link">
+                    <a href="products.html#cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="floating-cookie cookie-1">🍪</div>
+            <div class="floating-cookie cookie-2">🍫</div>
+            <div class="floating-cookie cookie-3">🥜</div>
+            <div class="floating-cookie cookie-4">🍯</div>
+            <div class="floating-cookie cookie-5">🍪</div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-line">Freshly Baked</span>
+                <span class="title-line highlight">Cookie Heaven</span>
+                <span class="title-line">Made With Love</span>
+            </h1>
+            <p class="hero-subtitle">Handcrafted cookies that melt in your mouth and warm your heart</p>
+            <div class="hero-buttons">
+                <a href="products.html" class="btn primary-btn">Explore Cookies</a>
+                <a href="contact.html" class="btn secondary-btn">Order Now</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <p>Scroll Down</p>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <div class="container">
+            <h2 class="section-title">Featured Delights</h2>
+            <div class="products-grid">
+                <div class="product-card featured">
+                    <div class="product-image">
+                        <div class="product-img-wrapper">
+                            <img src="https://fraicheliving.com/wp-content/uploads/2024/01/img_0369-1024x1024.jpg" />
+                        </div>
+                        <div class=" product-badge">Bestseller
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Classic Chocolate Chip</h3>
+                        <p>Our signature cookie with premium Belgian chocolate chunks</p>
+                        <div class="product-price">$4.99/dozen</div>
+                        <button class="add-to-cart-btn" data-product="Classic Chocolate Chip" data-price="4.99">
+                            <i class="fas fa-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card featured">
+                    <div class="product-image">
+                        <div class="product-img-wrapper">
+                            <img src="https://i.pinimg.com/1200x/dc/fa/62/dcfa62399b9bb7e8e3fb412a38a4f825.jpg" />
+                        </div>
+                        <div class="product-badge">New</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Chunky Peanut Butter</h3>
+                        <p>Rich and creamy with crunchy peanut pieces</p>
+                        <div class="product-price">$5.49/dozen</div>
+                        <button class="add-to-cart-btn" data-product="Chunky Peanut Butter" data-price="5.49">
+                            <i class="fas fa-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card featured">
+                    <div class="product-image">
+                        <div class="product-img-wrapper">
+                            <img src="https://i.pinimg.com/1200x/81/2a/c9/812ac9f83888876bd79a2163438137df.jpg" />
+                        </div>
+                        <div class="product-badge">Healthy</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Oatmeal Raisin</h3>
+                        <p>Hearty oats with plump raisins and a hint of cinnamon</p>
+                        <div class="product-price">$4.79/dozen</div>
+                        <button class="add-to-cart-btn" data-product="Oatmeal Raisin" data-price="4.79">
+                            <i class="fas fa-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="view-all-container">
+                <a href="products.html" class="btn secondary-btn">View All Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose Cookie Heaven?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Premium Quality</h3>
+                    <p>We use only the finest ingredients, sourced locally whenever possible, to create cookies that
+                        exceed expectations.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-birthday-cake"></i>
+                    </div>
+                    <h3>Freshly Baked Daily</h3>
+                    <p>All our cookies are baked fresh every morning in small batches to ensure maximum freshness and
+                        flavor.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Fast Delivery</h3>
+                    <p>Order by noon and receive warm, fresh cookies the same day. We deliver with care to maintain
+                        freshness.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Baked With Love</h3>
+                    <p>Every cookie is handcrafted with passion and attention to detail, ensuring a perfect treat every
+                        time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="testimonials-slider">
+                <div class="testimonial-card active">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">"The most amazing cookies I've ever tasted! The chocolate chip
+                            cookies are absolutely divine - crispy on the edges, chewy in the middle, and loaded with
+                            high-quality chocolate. My family is obsessed!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://picsum.photos/seed/customer1/100/100.jpg" alt="Customer">
+                            </div>
+                            <div class="author-info">
+                                <h4>lily son</h4>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">"I ordered cookies for my office party and everyone was amazed! The
+                            packaging was beautiful and the cookies were gone in minutes. Will definitely order again!"
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://picsum.photos/seed/customer2/100/100.jpg" alt="Customer">
+                            </div>
+                            <div class="author-info">
+                                <h4>Chen John</h4>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">"As a cookie enthusiast, I can say these are truly exceptional. The
+                            variety is amazing and each flavor is perfectly balanced. The oatmeal raisin cookies are my
+                            personal favorite!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://picsum.photos/seed/customer3/100/100.jpg" alt="Customer">
+                            </div>
+                            <div class="author-info">
+                                <h4>Emily Davis</h4>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-controls">
+                <button class="prev-testimonial"><i class="fas fa-chevron-left"></i></button>
+                <button class="next-testimonial"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Get Sweet Deals</h2>
+                <p>Subscribe to our newsletter and receive 10% off your first order</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn primary-btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <div class="cookie-logo">
+                                <div class="cookie-chips">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <span>Cookie Heaven</span>
+                    </div>
+                    <p>Freshly baked cookies made with love and the finest ingredients.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Products</h3>
+                    <ul>
+                        <li><a href="products.html">Chocolate Chip</a></li>
+                        <li><a href="products.html">Peanut Butter</a></li>
+                        <li><a href="products.html">Oatmeal Raisin</a></li>
+                        <li><a href="products.html">Specialty Cookies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Cookie Lane, Sweet City, SC 12345</li>
+                        <li><i class="fas fa-phone"></i> (123) 456-7890</li>
+                        <li><i class="fas fa-envelope"></i> hello@cookieheaven.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Cookie Heaven. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Notification -->
+    <div class="cart-notification" id="cartNotification">
+        <div class="notification-content">
+            <i class="fas fa-check-circle"></i>
+            <p>Item added to cart!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Heaven - Products</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="cookie-loader">
+            <div class="cookie-circle"></div>
+            <div class="cookie-chips">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <p>Baking fresh cookies...</p>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <div class="cookie-logo">
+                        <div class="cookie-chips">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+                <span>Cookie Heaven</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="cart-link">
+                    <a href="#cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Delicious Cookies</h1>
+            <p>Handcrafted with love, baked fresh daily</p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-tabs">
+                <button class="filter-tab active" data-filter="all">All Products</button>
+                <button class="filter-tab" data-filter="classic">Classic</button>
+                <button class="filter-tab" data-filter="specialty">Specialty</button>
+                <button class="filter-tab" data-filter="seasonal">Seasonal</button>
+                <button class="filter-tab" data-filter="gluten-free">Gluten-Free</button>
+            </div>
+            <div class="sort-options">
+                <label for="sort">Sort by:</label>
+                <select id="sort">
+                    <option value="featured">Featured</option>
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                    <option value="name">Name: A to Z</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-grid">
+                <div class="product-card" data-category="classic">
+                    <div class="product-image">
+                        <div class="product-img-wrapper">
+                            <img src="https://fraicheliving.com/wp-content/uploads/2024/01/img_0369-1024x1024.jpg" />
+                        </div>
+                        <div class="product-badge">Bestseller</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Classic Chocolate Chip</h3>
+                        <p>Our signature cookie with premium Belgian chocolate chunks</p>
+                        <div class="product-price">$4.99/dozen</div>
+                        <button class="add-to-cart-btn" data-product="Classic Chocolate Chip" data-price="4.99">
+                            <i class="fas fa-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="classic">
+                    <div class="product-image">
+                        <div class="product-img-wrapper">
+                            <img src="https://i.pinimg.com/1200x/dc/fa/62/dcfa62399b9bb7e8e3fb412a38a4f825.jpg" />
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Chunky Peanut Butter</h3>
+                        <p>Rich and creamy with crunchy peanut pieces</p>
+                        <div class="product-price">$5.49/dozen</div>
+                        <button class="add-to-cart-btn" data-product="Chunky Peanut Butter" data-price="5.49">
+                            <i class="fas fa-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="classic">
+                    <div class="product-image">
+                        <div class="product-img-wrapper">
+                            <img src="https://i.pinimg.com/1200x/81/2a/c9/812ac9f83888876bd79a2163438137df.jpg" />
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Oatmeal Raisin</h3>
+                        <p>Hearty oats with plump raisins and a hint of cinnamon</p>
+                        <div class="product-price">$4.79/dozen</div>
+                        <button class="add-to-cart-btn" data-product="Oatmeal Raisin" data-price="4.79">
+                            <i class="fas fa-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="specialty">
+                    <div class="product-image">
+                        <div class="product-img-wrapper">
+                            <img src="https://i.pinimg.com/1200x/49/af/f9/49aff95f7a585a30480efe5dd9290206.jpg" />
+                        </div>
+                        <div class="product-badge">Premium</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>White Chocolate Macadamia</h3>
+                        <p>Decadent white chocolate chunks with crunchy macadamia nuts</p>
+                        <div class="product-price">$6.99/dozen</div>
+                        <button class="add-to-cart-btn" data-product="White Chocolate Macadamia" data-price="6.99">
+                            <i class="fas fa-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="classic">
+                    <div class="product-image">
+                        <div class="product-img-wrapper">
+                            <img src="https://i.pinimg.com/736x/aa/65/88/aa65881951a99eed656408a9cd226b62.jpg" />
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Snickerdoodle</h3>
+                        <p>Soft and chewy cookies rolled in cinnamon sugar</p>
+                        <div class="product-price">$4.49/dozen</div>
+                        <button class="add-to-cart-btn" data-product="Snickerdoodle" data-price="4.49">
+                            <i class="fas fa-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="specialty">
+                    <div class="product-image">
+                        <div class="product-img-wrapper">
+                            <img src="https://i.pinimg.com/1200x/b8/c9/46/b8c946fc30f97748d0a7c57e66c89644.jpg" />
+                        </div>
+                        <div class="product-badge">Chocolate Lover</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Double Chocolate</h3>
+                        <p>Rich chocolate cookie loaded with chocolate chunks</p>
+                        <div class="product-price">$5.99/dozen</div>
+                        <button class="add-to-cart-btn" data-product="Double Chocolate" data-price="5.99">
+                            <i class="fas fa-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="seasonal">
+                    <div class="product-image">
+                        <div class="product-img-wrapper">
+                            <img src="https://i.pinimg.com/1200x/a0/29/2c/a0292c01cfa18fb17091551dd69e20c8.jpg" />
+                        </div>
+                        <div class="product-badge">Limited Edition</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Pumpkin Spice</h3>
+                        <p>Fall favorite with real pumpkin and warm spices</p>
+                        <div class="product-price">$5.79/dozen</div>
+                        <button class="add-to-cart-btn" data-product="Pumpkin Spice" data-price="5.79">
+                            <i class="fas fa-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="gluten-free">
+                    <div class="product-image">
+                        <div class="product-img-wrapper">
+                            <img src="https://i.pinimg.com/736x/0b/62/95/0b62955462ff3bcab6e1efceed2ca95e.jpg" />
+                        </div>
+                        <div class="product-badge">Gluten-Free</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Almond Flour Chocolate</h3>
+                        <p>Delicious gluten-free chocolate chip made with almond flour</p>
+                        <div class="product-price">$7.49/dozen</div>
+                        <button class="add-to-cart-btn" data-product="Almond Flour Chocolate" data-price="7.49">
+                            <i class="fas fa-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="specialty">
+                    <div class="product-image">
+                        <div class="product-img-wrapper">
+                            <img src="https://i.pinimg.com/1200x/7f/06/9a/7f069a2ebb6857bbc0e5daf15e8f5a09.jpg" />
+                        </div>
+                        <div class="product-badge">Chef's Special</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Salted Caramel</h3>
+                        <p>Buttery caramel with a touch of sea salt and chocolate drizzle</p>
+                        <div class="product-price">$6.49/dozen</div>
+                        <button class="add-to-cart-btn" data-product="Salted Caramel" data-price="6.49">
+                            <i class="fas fa-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section class="cart-section" id="cart">
+        <div class="container">
+            <h2>Your Shopping Cart</h2>
+            <div class="cart-container">
+                <div class="cart-items">
+                    <div class="empty-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <p>Your cart is empty</p>
+                        <a href="#products" class="btn primary-btn">Continue Shopping</a>
+                    </div>
+                </div>
+                <div class="cart-summary">
+                    <h3>Order Summary</h3>
+                    <div class="summary-row">
+                        <span>Subtotal:</span>
+                        <span class="subtotal">$0.00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Delivery:</span>
+                        <span class="delivery">$5.00</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>Total:</span>
+                        <span class="total-amount">$5.00</span>
+                    </div>
+                    <a href="contact.html" class="btn primary-btn checkout-btn">Proceed to Checkout</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <div class="cookie-logo">
+                                <div class="cookie-chips">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <span>Cookie Heaven</span>
+                    </div>
+                    <p>Freshly baked cookies made with love and the finest ingredients.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Products</h3>
+                    <ul>
+                        <li><a href="products.html">Chocolate Chip</a></li>
+                        <li><a href="products.html">Peanut Butter</a></li>
+                        <li><a href="products.html">Oatmeal Raisin</a></li>
+                        <li><a href="products.html">Specialty Cookies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Cookie Lane, Sweet City, SC 12345</li>
+                        <li><i class="fas fa-phone"></i> (123) 456-7890</li>
+                        <li><i class="fas fa-envelope"></i> hello@cookieheaven.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Cookie Heaven. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Notification -->
+    <div class="cart-notification" id="cartNotification">
+        <div class="notification-content">
+            <i class="fas fa-check-circle"></i>
+            <p>Item added to cart!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
